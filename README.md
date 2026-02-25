@@ -81,7 +81,7 @@ As a student of **M.Sc. Data Science** with a background in **Mathematics**, thi
 
 ```bash
 # Clone the repository
-git clone [https://github.com/saniya-ahuja/chart-charm-data.git](https://github.com/saniya-ahuja/chart-charm-data.git)
+git clone<OUR_GIT_URL>
 
 # Navigate into the project
 cd chart-charm-data
