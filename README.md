@@ -1,96 +1,77 @@
 # 📈 StockViz Terminal — Financial Data Dashboard
 
-### A production-style financial analysis web application for visualizing market trends
+A modern web-based application for analyzing and visualizing stock market data using interactive charts and statistical insights.
 
-**StockViz Terminal** transforms a raw financial data pipeline into a **startup-ready, interactive web product**. It leverages real-time API integration and mathematical modeling to provide high-fidelity insights into global stock market movements.
+---
 
-This project is designed to demonstrate **end-to-end Data Engineering ownership** — from raw data acquisition to a polished, recruiter-facing application.
+## 📸 Output
+
+[App Screenshot](
+
+
+
+## 📊 Features
+
+* 📈 Interactive **Closing Price** visualization
+* 📊 Dynamic **Trading Volume** charts
+* 📉 **Descriptive Statistics** (mean, max, min, standard deviation)
+* 🔍 Search and switch between stock symbols (AAPL, GOOGL, TSLA)
+* 📅 Custom **date range selection**
+* 📥 Export data as CSV
 
 ---
 
 ## 🎯 Problem Statement
 
-Analyzing stock market volatility is highly complex due to:
-* **High-frequency data noise**: Difficulty in isolating significant price trends from daily fluctuations.
-* **Vast historical scale**: Managing and rendering years of data points efficiently for user interaction.
-* **Non-linear market variables**: Understanding the correlation between trading volume and price action.
+Stock market data is complex due to:
 
-**Goal**: Use data engineering and statistical analysis to learn pricing patterns from historical data and deliver **accurate, interactive financial visualizations**.
+* High-frequency fluctuations
+* Large historical datasets
+* Non-linear relationships between price and volume
+
+**Goal:**
+To analyze and visualize stock trends using data engineering and statistical techniques.
 
 ---
 
 ## 🧠 Solution Overview
 
-StockViz Terminal applies a complete data pipeline and exposes it through a modern terminal-inspired interface:
-1. **Raw Financial Data**: Ingested via `yfinance` API.
-2. **Data Transformation**: Leveraged **Pandas** for time-series cleaning and date-feature decomposition.
-3. **Interactive Dashboard**: A React-based frontend providing visualization-first exploration.
+The application follows a complete data pipeline:
+
+1. Fetches stock data using an API
+2. Processes data using data manipulation techniques
+3. Visualizes insights through an interactive dashboard
 
 ---
 
-## 🧱 Application Features
+## 🧮 Mathematical Concepts Used
 
-### 🏠 Landing Page — Modern Terminal Aesthetic
-* **Dark-mode design**: Terminal-inspired hero section with neon accents.
-* **Clear Value Proposition**: Immediate entry points for ticker search and date-range filtering.
-
-### 📊 Interactive Data Explorer
-* **Dynamic Charting**: Interactive line charts for **Closing Price** and **Trading Volume**.
-* **Hover & Zoom**: Visualization-first EDA that avoids dense raw tables.
-* **Statistical Summaries**: Integrated **Pandas `.describe()`** logic to show mean, max, and confidence ranges.
-
-### 🚀 Research-Grade Tools
-* **Ticker Search**: Instantly switch between symbols like `AAPL`, `GOOGL`, and `TSLA`.
-* **Date Range Picker**: Isolate specific market events from the sidebar.
-* **Data Export**: One-click **CSV download** for offline mathematical research.
-
----
-
-## 🧮 Mathematical Foundations
-
-As a student of **M.Sc. Data Science** with a background in **Mathematics**, this project incorporates:
-* **Stochastic Processes**: Visualizing price as a discrete-time sequence to identify volatility clusters.
-* **Numerical Linear Algebra**: Efficiently structuring data into matrices for high-speed filtering.
-* **Descriptive Statistics**: Automated statistical grounding for visualized trends using rolling variance.
+* Descriptive Statistics
+* Time Series Analysis
+* Data Visualization
 
 ---
 
 ## ⚙️ Tech Stack
 
-### Data Science
-* **Python 3.11**: Managed via Conda `stockapp` environment.
-* **Pandas & NumPy**: For matrix-like data manipulation.
-* **yfinance**: For real-time API integration.
+### Data & Backend
+
+* Python
+* Pandas
+* NumPy
+* yfinance
 
 ### Frontend
-* **React + TypeScript**: For a robust, type-safe frontend.
-* **Tailwind CSS**: For industrial dark-mode design.
-* **Recharts**: For high-performance interactive charting.
+
+* React + TypeScript
+* Tailwind CSS
+* Recharts
 
 ---
 
-## 🗺️ Model Roadmap
+## 🎯 Conclusion
 
-1. **Trend Prediction**: Implement **Least Squares Regression** to calculate and display price trend lines.
-2. **System Solvers**: Integrate **Gauss Elimination** logic to solve linear systems for predictive modeling.
-3. **Recommendation Engine**: Use **Matrix Factorization** to suggest similar stocks based on volatility correlation.
+This project demonstrates how financial data can be fetched, processed, and visualized to build an interactive analytics dashboard. It highlights practical applications of data science in real-world financial analysis.
 
 ---
 
-## 🚀 Running Locally
-
-```bash
-# Clone the repository
-git clone<OUR_GIT_URL>
-
-# Navigate into the project
-cd chart-charm-data
-
-# Activate your environment
-conda activate stockapp
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start the application
-streamlit run stock_app.py
