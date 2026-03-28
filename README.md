@@ -6,7 +6,7 @@ A modern web-based application for analyzing and visualizing stock market data u
 
 ## 📸 Output
 
-![App Screenshot](screenshot.jpeg)
+![App Screenshot](https://github.com/saniya-ahuja/Stock-Chart-Hub-WebApp/blob/main/Screenshot.jpeg)
 
 ## 📊 Features
 
